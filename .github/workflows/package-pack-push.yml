@@ -15,7 +15,7 @@ jobs:
         with:
           dotnet-version: 5.0.301
       - name: Pack
-        run: dotnet pack --configuration Release -o "./packages" NYSE.TimeHelper
+        run: dotnet pack --configuration Release -o "./packages" NYSE-timehelper
       - name: Publish NuGet
         env:
           NUGET_AUTH_TOKEN: ${{secrets.NUGET_AUTH_TOKEN}}
